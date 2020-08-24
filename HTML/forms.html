@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formlar</title>
+</head>
+<body>
+    <form action="/Home/Register">
+        <p>
+        İsim: <input type="text" placeholder="Your name" width="150" name="name" required>
+        </p>
+        <p>
+            Soyisim: <input type="text" placeholder="Your last name" width="150" name="surname" required>
+         </p>
+         <p>
+            E-Posta: <input type="email" placeholder="Your e-mail" width="150" name="surname" required>
+         </p>
+         <p>
+             Beni Hatırla
+             <input type="checkbox" name="rememberMe">
+         </p>
+
+         <p>
+             Erkek <input type="radio" name="gender">
+             Kadın <input type="radio" name="gender">
+             Belirsiz <input type="radio" name="gender">
+         </p>
+         <p>
+             Hobiler <br>
+
+             Kuran Okumak <input type="checkbox" name="hobby">
+             Flüt Çalmak <input type="checkbox" name="hobby">
+             Derede Yüzmek <input type="checkbox" name="hobby">
+         </p>
+
+         <p>
+             <select name="resident">
+                <option>İstanbul</option>
+                <option>Eskişehir</option>
+                <option>Konya</option>
+             </select>
+         </p>
+
+         <p>
+            <select multiple name="color">
+               <option>Kırmızı</option>
+               <option>Siyah</option>
+               <option>Mor</option>
+            </select>
+        </p>
+        <p>
+            Dosya: <input type="file" width="150" required>
+         </p>
+        <input type="submit" value="Kaydet">
+        <input type="reset" value="Reset">
+
+    </form>
+</body>
+</html>

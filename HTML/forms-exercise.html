@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Üye Ol</title>
+    </head>
+    <body>
+        <h1>
+            Formu Eksiksiz Doldurunuz.
+        </h1>
+        <form action="/Home/Register">
+            <hr>
+
+            <h4>
+                Hesap Bilgileriniz
+            </h4>
+
+            <p>
+                Kullanıcı Adı:<input type="text" placeholder="Username"
+                    name="username" required>
+            </p>
+            <p>
+                E-mail:<input type="email" placeholder="E-Mail" name="email"
+                    required>
+            </p>
+            <p>
+                Parola:<input type="password" placeholder="Parola" name="password" required>
+            </p>
+
+            <h4>
+                Kişisel Bilgileriniz
+            </h4>
+
+            <p>
+                İsim:<input type="text" name="name">
+            </p>
+            <p>
+                Soyadı:<input type="text" name="surname">
+            </p>
+
+            <p>
+                <select name="city">
+                    <option>İstanbul</option>
+                    <option>Eskişehir</option>
+                    <option>Konya</option>
+                </select>
+            </p>
+
+            <p>
+                Cinsiyet: Erkek <input type="radio" name="gender">
+                Kadın <input type="radio" name="gender">
+                Belirsiz <input type="radio" name="gender">
+            </p>
+
+            <p>
+                Hobileriniz:
+                <input type="checkbox" name="hobby"> Kuran Okumak
+                <input type="checkbox" name="hobby"> Flüt Çalmak
+                <input type="checkbox" name="hobby"> Derede Yüzmek
+            </p>
+
+            <input type="submit" value="Kaydet">
+            <input type="reset" value="Sıfırla">
+        </form>
+    </body>
+</html>
